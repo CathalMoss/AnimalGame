@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalGame.Page5"
+            BackgroundImage="bg8.jpg">
+    <ScrollView>
+        <StackLayout>
+            <!--Instructions-->
+            <Label Text=" Click the correct picture to match with the text!"
+                   VerticalOptions="Center"
+                   TextColor="Blue"
+                   FontSize="Medium"
+                   FontFamily="Comic Sans MS"
+                   HorizontalOptions="Center"/>
+            
+            <!--Animal to Find-->
+            <Label Text="Lion"
+                   HorizontalOptions="Center" 
+                   TextColor="Black" 
+                   FontSize="Large" 
+                   FontFamily="Questrial" 
+                   FontAttributes="Bold">
+            </Label>
+
+            <!--lion image-->
+            <ImageButton Source="lion.jfif"
+                         ClassId="lion"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+            <!--tiger image-->
+            <ImageButton Source="tiger.jfif"
+                         ClassId="tiger"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+            
+            <!-- elk image-->
+            <ImageButton Source="elk.jfif"
+                         ClassId="elk"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!-- fox image-->
+            <ImageButton Source="fox.jfif"
+                         ClassId="fox"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!-- Place new controls here -->
+            <Label Text="By Cathal Moss" 
+               HorizontalOptions="End"
+               VerticalOptions="CenterAndExpand" />
+            <!--Previous Page button-->
+            <Button Text="Take me to previous page" Clicked="Handle_Clicked2">
+            </Button>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalGame.Page3"
+              BackgroundImage="bg8.jpg">
+    <ScrollView>
+        <StackLayout>
+            <!--Instructions-->
+            <Label Text=" Click the correct picture to match with the text!"
+                   VerticalOptions="Center"
+                   TextColor="Blue"
+                   FontSize="Medium"
+                   FontFamily="Comic Sans MS"
+                   HorizontalOptions="Center"/>
+            
+            <!--Animal to Find-->
+            <Label Text="Mouse"
+                   HorizontalOptions="Center" 
+                   TextColor="Black" 
+                   FontSize="Large" 
+                   FontFamily="Questrial" 
+                   FontAttributes="Bold">
+            </Label>
+            
+            <!--rooster image-->
+            <ImageButton Source="rooster.jfif"
+                         ClassId="rooster"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--hamster image-->
+            <ImageButton Source="hamster.jfif"
+                         ClassId="panda"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--koala image-->
+            <ImageButton Source="koala.jfif"
+                         ClassId="koala"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--mosue image-->
+            <ImageButton Source="mouse.jfif"
+                         ClassId="mouse"
+                       WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+
+            <!-- app creator -->
+            <Label Text="By Cathal Moss" 
+               HorizontalOptions="End"
+               VerticalOptions="CenterAndExpand" />
+
+            <!--Previous Page Button-->
+            <Button Text="Take me to previous page" Clicked="Handle_Clicked">
+            </Button>
+        </StackLayout>
+     </ScrollView>
+</ContentPage>

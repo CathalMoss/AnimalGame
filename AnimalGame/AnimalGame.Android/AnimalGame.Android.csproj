@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAF95A69-F0BF-4B26-AD34-88E778A72560}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AnimalGame.Droid</RootNamespace>
+    <AssemblyName>AnimalGame.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="27.0.2.1" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnimalGame\AnimalGame.csproj">
+      <Project>{69C9BF0A-EABF-47F5-A45C-6B7891791738}</Project>
+      <Name>AnimalGame</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\dog.jpg" />
+    <AndroidResource Include="Resources\drawable\cow.jpg" />
+    <AndroidResource Include="Resources\drawable\duck.jpg" />
+    <AndroidResource Include="Resources\drawable\cat.jpg" />
+    <AndroidResource Include="Resources\drawable\download.jpg" />
+    <AndroidResource Include="Resources\drawable\bg.png" />
+    <AndroidResource Include="Resources\drawable\bg2.png" />
+    <AndroidResource Include="Resources\drawable\bg3.png" />
+    <AndroidResource Include="Resources\drawable\bg4.png" />
+    <AndroidResource Include="Resources\drawable\bg5.png" />
+    <AndroidResource Include="Resources\drawable\bg6.png" />
+    <AndroidResource Include="Resources\drawable\bg7.png" />
+    <AndroidResource Include="Resources\drawable\bg8.jpg" />
+    <AndroidResource Include="Resources\drawable\bg9.jpg" />
+    <AndroidResource Include="Resources\drawable\bg10.jpg" />
+    <AndroidResource Include="Resources\drawable\bg11.png" />
+    <AndroidResource Include="Resources\drawable\bg12.png" />
+    <AndroidResource Include="Resources\drawable\fish.jfif" />
+    <AndroidResource Include="Resources\drawable\goat.jpg" />
+    <AndroidResource Include="Resources\drawable\monkey.jfif" />
+    <AndroidResource Include="Resources\drawable\mouse.jfif" />
+    <AndroidResource Include="Resources\drawable\parrot.jfif" />
+    <AndroidResource Include="Resources\drawable\monkey2.jfif" />
+    <AndroidResource Include="Resources\drawable\alpaca.jfif" />
+    <AndroidResource Include="Resources\drawable\bear.jfif" />
+    <AndroidResource Include="Resources\drawable\hamster.jfif" />
+    <AndroidResource Include="Resources\drawable\hedgehog.jfif" />
+    <AndroidResource Include="Resources\drawable\koala.jfif" />
+    <AndroidResource Include="Resources\drawable\panda.jfif" />
+    <AndroidResource Include="Resources\drawable\rabbit.jfif" />
+    <AndroidResource Include="Resources\drawable\rooster.jfif" />
+    <AndroidResource Include="Resources\drawable\squirrel.jfif" />
+    <AndroidResource Include="Resources\drawable\panda2.jfif" />
+    <AndroidResource Include="Resources\drawable\crab.jfif" />
+    <AndroidResource Include="Resources\drawable\deer.jfif" />
+    <AndroidResource Include="Resources\drawable\dolphin.jfif" />
+    <AndroidResource Include="Resources\drawable\eagle.jfif" />
+    <AndroidResource Include="Resources\drawable\elk.jfif" />
+    <AndroidResource Include="Resources\drawable\fox.jfif" />
+    <AndroidResource Include="Resources\drawable\hippo.jfif" />
+    <AndroidResource Include="Resources\drawable\horse.jfif" />
+    <AndroidResource Include="Resources\drawable\lion.jfif" />
+    <AndroidResource Include="Resources\drawable\peacock.jfif" />
+    <AndroidResource Include="Resources\drawable\seahorse.jfif" />
+    <AndroidResource Include="Resources\drawable\tiger.jfif" />
+    <AndroidResource Include="Resources\drawable\wolf.jfif" />
+    <AndroidResource Include="Resources\drawable\lemur.jfif" />
+    <AndroidResource Include="Resources\drawable\lizard.jfif" />
+    <AndroidResource Include="Resources\drawable\skunk.jfif" />
+    <AndroidResource Include="Resources\drawable\sloth.jfif" />
+    <AndroidResource Include="Resources\drawable\elephant.jfif" />
+    <AndroidResource Include="Resources\drawable\rhino.jfif" />
+    <AndroidResource Include="Resources\drawable\turtle.jfif" />
+    <AndroidResource Include="Resources\drawable\walrus.jfif" />
+    <AndroidResource Include="Resources\drawable\penguin.jfif" />
+    <AndroidResource Include="Resources\drawable\polar.jfif" />
+    <AndroidResource Include="Resources\drawable\seal.jfif" />
+    <AndroidResource Include="Resources\drawable\weasel.jfif" />
+    <AndroidResource Include="Resources\drawable\armadillo.jfif" />
+    <AndroidResource Include="Resources\drawable\camel.jfif" />
+    <AndroidResource Include="Resources\drawable\lobster.jfif" />
+    <AndroidResource Include="Resources\drawable\porcupine.jfif" />
+    <AndroidResource Include="Resources\drawable\b1.jfif" />
+    <AndroidResource Include="Resources\drawable\b2.jfif" />
+    <AndroidResource Include="Resources\drawable\b3.jfif" />
+    <AndroidResource Include="Resources\drawable\b4.jfif" />
+    <AndroidResource Include="Resources\drawable\b5.jpg" />
+    <AndroidResource Include="Resources\drawable\bb.jfif" />
+    <AndroidResource Include="Resources\drawable\bb1.jfif" />
+    <AndroidResource Include="Resources\drawable\bb2.jfif" />
+    <AndroidResource Include="Resources\drawable\bb6.jfif" />
+    <AndroidResource Include="Resources\drawable\chicken.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

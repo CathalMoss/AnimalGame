@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalGame.Page7"
+             BackgroundImage="bg8.jpg">
+    <ScrollView>
+        <StackLayout>
+            <!--Instructions-->
+            <Label Text=" Click the correct picture to match with the text!"
+                   VerticalOptions="Center"
+                   TextColor="Blue"
+                   FontSize="Medium"
+                   FontFamily="Comic Sans MS"
+                   HorizontalOptions="Center"/>
+            
+            <!--Animal to Find-->
+            <Label Text="Skunk"
+                   HorizontalOptions="Center" 
+                   TextColor="Black" 
+                   FontSize="Large" 
+                   FontFamily="Questrial" 
+                   FontAttributes="Bold">
+            </Label>
+
+            <!--lizard image-->
+            <ImageButton Source="lizard.jfif"
+                         ClassId="lizard"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--lemur image-->
+            <ImageButton Source="lemur.jfif"
+                         ClassId="lemur"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--Skunk image-->
+            <ImageButton Source="skunk.jfif"
+                         ClassId="skunk"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--sloth image-->
+            <ImageButton Source="sloth.jfif"
+                         ClassId="sloth"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!-- app creator-->
+            <Label Text="By Cathal Moss" 
+               HorizontalOptions="End"
+               VerticalOptions="CenterAndExpand" />
+            <!--Previous Page button-->
+            <Button Text="Take me to previous page" Clicked="Handle_Clicked2">
+            </Button>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

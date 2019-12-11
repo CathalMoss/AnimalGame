@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalGame.Start"
+            BackgroundImage="b5.jpg">
+
+    <ScrollView>
+        <StackLayout>
+        <!--Heading for app-->
+        <Label Text="Animal Guessing Game for Kids!"
+                   FontSize="Large" FontFamily="Comic Sans MS" TextColor="Black" BackgroundColor="LightGreen" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            
+            <!--image for design-->
+            <Image Source="bb6.jfif" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="600" HeightRequest="400"/>
+            
+        <!-- Sign in procedure - assigning variables, positioning, assigning the color -->
+            <Label x:Name="Lb1_Username" Text="Username" 
+                HorizontalOptions="Center"
+                TextColor="Black" 
+                   FontAttributes="Bold"/>
+
+            <!-- Entry box -->
+            <Entry x:Name="Entry_Username" Placeholder="Username"/>
+
+            <!-- Password procedure - assigning variables, positioning, assigning the color -->
+            <Label x:Name="Lb1_Password" Text="Password" 
+                HorizontalOptions="Center"
+                TextColor="Black"
+                   FontAttributes="Bold"/>
+
+            <!-- Entry box -->
+            <Entry x:Name="Entry_Password" Placeholder="Password" />
+
+            <!-- submit button -->
+            <Button x:Name="Btn_Signin" Text="Sign up" TextColor="White" Clicked="SignInProcedure" />
+            
+            <!--start button for user who dont want to sign in-->
+            <Button BorderRadius="15" Text="Start"
+                    FontSize="Large" TextColor="Navy" BackgroundColor="White"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="Handle_Clicked"></Button>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

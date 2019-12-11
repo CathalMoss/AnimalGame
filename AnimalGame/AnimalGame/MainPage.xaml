@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AnimalGame"
+             x:Class="AnimalGame.MainPage"
+                BackgroundImage="bg8.jpg">
+
+    <ScrollView>
+
+        <StackLayout>
+            <!--Instructions for the app-->
+            <Label Text=" Click the correct picture to match with the text!"
+                   VerticalOptions="Center"
+                   TextColor="Blue"
+                   FontSize="Medium"
+                   FontFamily="Comic Sans MS"
+                   HorizontalOptions="Center"/>
+            
+            <!--Animal user has to find-->
+            <Label Text="Dog"
+                   HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black" 
+                   FontSize="Large" 
+                   FontFamily="Questrial" 
+                   FontAttributes="Bold">
+            </Label>
+
+     
+            <!-- dog image-->
+            <ImageButton Source="dog.jpg"
+                         ClassId="dog"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!-- cat image-->
+            <ImageButton Source="cat.jpg"
+                         ClassId="cat"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+            <!-- cow image-->
+            <ImageButton Source="cow.jpg"
+                         ClassId="cow"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+            <!-- duck image-->
+            <ImageButton Source="duck.jpg"
+                         ClassId="duck"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            
+           
+
+            
+
+            <!-- app creator -->
+                <Label Text="By Cathal Moss" 
+               HorizontalOptions="End"
+               VerticalOptions="CenterAndExpand" />
+
+            <!--Button to take user to previous page-->
+            <Button Text="Take me to previous page" Clicked="Handle_Clicked2">
+            </Button>
+
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage>
+

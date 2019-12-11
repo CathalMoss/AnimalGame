@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimalGame.Page6"
+             BackgroundImage="bg8.jpg">
+    <ScrollView>
+        <StackLayout>
+            <!--Instructions-->
+            <Label Text=" Click the correct picture to match with the text!"
+                   VerticalOptions="Center"
+                   TextColor="Blue"
+                   FontSize="Medium"
+                   FontFamily="Comic Sans MS"
+                   HorizontalOptions="Center"/>
+            
+            <!--Animal to Find-->
+            <Label Text="Camel"
+                   HorizontalOptions="Center" 
+                   TextColor="Black" 
+                   FontSize="Large" 
+                   FontFamily="Questrial" 
+                   FontAttributes="Bold">
+            </Label>
+
+            <!--horse image-->
+            <ImageButton Source="horse.jfif"
+                         ClassId="horse"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+            <!--alpaca image-->
+            <ImageButton Source="alpaca.jfif"
+                         ClassId="alpaca"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+            <!--wolf image-->
+            <ImageButton Source="wolf.jfif"
+                         ClassId="wolf"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!--camel image-->
+            <ImageButton Source="camel.jfif"
+                         ClassId="camel"
+                         WidthRequest = "260"
+                          HeightRequest = "260"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="Center" 
+                         Clicked = "ButtonClicked"/>
+
+            <!-- app creator -->
+            <Label Text="By Cathal Moss" 
+               HorizontalOptions="End"
+               VerticalOptions="CenterAndExpand" />
+            <!--Previous Page button-->
+            <Button Text="Take me to previous page" Clicked="Handle_Clicked2">
+            </Button>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
